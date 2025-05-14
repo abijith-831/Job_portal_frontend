@@ -55,7 +55,7 @@ function App() {
 
   const fetchJobs = useCallback(async (filters = {}) => {
     try {
-      const response = await axios.get('http://localhost:5000/api/get-jobs', {
+      const response = await axios.get('https://job-portal-backend-38l6.onrender.com/api/get-jobs', {
         params: filters,
       });
 
