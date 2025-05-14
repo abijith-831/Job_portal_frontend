@@ -57,7 +57,7 @@ const JobModal = ({ onClose }) => {
   
     try {
       console.log('Sending job data:', jobData);
-      const response = await axios.post('http://localhost:5000/api/submit-jobs', jobData);
+      const response = await axios.post('https://job-portal-backend-38l6.onrender.com/api/submit-jobs', jobData);
   
       if (response.status === 200 || response.status === 201) {
         enqueueSnackbar('Job posted successfully!', { variant: 'success' });
