@@ -1,0 +1,123 @@
+/* Outer header centered */
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+}
+
+
+.navbar-pill {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 50px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.logo {
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.2s ease;
+}
+
+.create-btn {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  background: linear-gradient(to top, #6100AD,#A128FF);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 999px;
+  font-family: 'Satoshi', sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-text {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  text-align: center;
+  transition: transform 0.2s ease;
+  line-height: 30px;
+}
+.create-btn:hover {
+  background-color: #732d91;
+  transform: translate(3px, 3px) scale(1.05);
+}
+
+.btn-primary {
+  transform: translateY(-50%);
+}
+
+.btn-secondary {
+  transform: translateY(150%);
+}
+
+.create-btn:hover .btn-primary {
+  transform: translateY(-150%);
+}
+
+.create-btn:hover .btn-secondary {
+  transform: translateY(-50%);
+}
+
+
+/* Responsive tweaks for medium screens */
+@media (max-width: 992px) {
+  .navbar-pill {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+
+  .create-btn {
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 32px;
+  }
+}
