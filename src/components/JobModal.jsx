@@ -139,7 +139,7 @@ const JobModal = ({ onClose }) => {
           </button>
           <button className="publish-btn" onClick={handleSubmit}>
             Publish
-            <img src="/logos/d-arrow.png" alt="Arrow" className="arrow-icon" />
+            <img src="/logos/r-arrow.png" alt="Arrow" className="arrow-icon" />
           </button>
         </div>
       </div>
