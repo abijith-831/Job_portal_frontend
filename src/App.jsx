@@ -46,11 +46,11 @@ function App() {
 
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
   const imagePaths = [
-    '/src/assets/logos/image 77.svg',
-    '/src/assets/logos/image 78.svg',
-    '/src/assets/logos/image 79.svg'
+    '/logos/image 77.svg',
+    '/logos/image 78.svg',
+    '/logos/image 79.svg'
   ];
 
   const fetchJobs = useCallback(async (filters = {}) => {
