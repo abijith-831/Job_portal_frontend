@@ -13,15 +13,15 @@ function JobCard({ job }) {
       <h3>{job.job_title}</h3>
       <div className="job-info">
         <span>
-          <img src="/src/assets/logos/Vector (1).png" alt="experience" className="icon" />
+          <img src="/logos/Vector (1).png" alt="experience" className="icon" />
           1 - 3 yr Exp
         </span>
         <span>
-          <img src="/src/assets/logos/Vector (2).png" alt="onsite" className="icon" />
+        <img src="/logos/Vector (2).png" alt="onsite" className="icon" />
           Onsite
         </span>
         <span>
-          <img src="/src/assets/logos/Vector (3).png" alt="salary" className="icon" />
+        <img src="/logos/Vector (3).png" alt="salary" className="icon" />
           ₹ {job.salary_max} 
         </span>
       </div>
